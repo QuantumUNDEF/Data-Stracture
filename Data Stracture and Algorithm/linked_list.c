@@ -33,6 +33,10 @@ int main()
     struct node *new_node = malloc(sizeof(struct node));
     new_node -> data = 100;
     new_node -> next = NULL;
+    struct node *newHead = malloc(sizeof(struct node));
+    newHead-> data = 100;
+    newHead -> next = head;
+    head = newHead;
     while (temp -> next != NULL)
     {
       temp = temp -> next;
