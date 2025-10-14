@@ -62,6 +62,10 @@ int main()
         newnode2-> next = temp2-> next;
         temp2 -> next = newnode2;
     }
+    // deletion the first node
+    struct node *temp3 = head;
+    head = head -> next;
+    free(temp3);
     // code for printing the linked list
     struct node *ptr = head;
     while(ptr != NULL){
