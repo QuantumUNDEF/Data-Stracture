@@ -24,7 +24,7 @@ int main()
     head -> next -> next = current;
     current -> data = 3;
     current -> next = NULL;
-
+// basic approach for printing the list
     /*printf("Our 1st node: %d\n",head->data);
     printf("%d", head);
     printf("\nOur 2nd node: %d\n",current->data);
@@ -32,6 +32,15 @@ int main()
     printf("\nOur 3nd node: %d\n",current->data);
     printf("\n%d", current); 
     return 0;*/
+    //printing original
+    printf("\nOriginal list: ");
+    struct node *ptr6 = head;
+    while(ptr6 != NULL)
+    {
+        printf("\n%d", ptr6-> data);
+        //printf("\n%d", ptr -> next);
+        ptr6 = ptr6 -> next;
+    }
     // add a node to the last
     struct node *temp; // creating a temporary pointer
     temp = head;
@@ -45,11 +54,28 @@ int main()
     }
     // updating the last address from NULL to new node
     temp->next = new_node;
+    printf("\nElement added at Last: ");
+    struct node *ptr7 = head;
+    // printing
+    while(ptr7 != NULL)
+    {
+        printf("\n%d", ptr7-> data);
+        //printf("\n%d", ptr -> next);
+        ptr7 = ptr7-> next;
+    }
     // inserting the node at begining
     struct node *newHead = malloc(sizeof(struct node));
     newHead-> data = 5;
     newHead -> next = head;
     head = newHead;
+    printf("\nElement added at First");
+    struct node *ptr8 = head;
+    while(ptr8 != NULL)
+    {
+        printf("\n%d", ptr8-> data);
+        //printf("\n%d", ptr -> next);
+        ptr8 = ptr8-> next;
+    }
     // insertion at a spectic position
     int position = 5;
     struct node *newnode2 = malloc(sizeof(struct node));
@@ -66,7 +92,7 @@ int main()
         temp2 -> next = newnode2;
     }
     // printing linked list
-    printf("\nOriginal list: ");
+    printf("\nNode added at a specific position(5th): ");
     struct node *ptr = head;
     while(ptr != NULL)
     {
@@ -79,8 +105,8 @@ int main()
     head = head -> next;
     free(temp3);
     
-    // code for printing the linked list
-    printf("\n First element Delteted from Linked list: ");
+    // printing
+    printf("\nFirst element Delteted from Linked list: ");
     struct node *ptr2 = head;
     while(ptr2 != NULL)
     {
@@ -114,8 +140,8 @@ int main()
         
         free(current3);
     }        
-    printf("Last element Deleted succeccfully!");
-    printf("\n last element Delteted from Linked list: ");
+    //printf("\nLast element Deleted succeccfully!");
+    printf("\nLast element Delteted from Linked list: ");
     struct node *ptr5 = head;
     while(ptr5 != NULL)
     {
@@ -126,3 +152,4 @@ int main()
     
 
 }    
+    
