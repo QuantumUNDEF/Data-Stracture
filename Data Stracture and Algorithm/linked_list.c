@@ -1,4 +1,4 @@
- #include <stdio.h>
+#include <stdio.h>
 #include<stdlib.h>
 
 struct node
@@ -39,8 +39,9 @@ int main()
     new_node -> data = 4;
     new_node -> next = NULL;
     // loop to find the last element
-    while (temp -> next != NULL){
-    temp = temp -> next;
+    while (temp -> next != NULL)
+    {
+        temp = temp -> next;
     }
     // updating the last address from NULL to new node
     temp->next = new_node;
@@ -55,23 +56,73 @@ int main()
     newnode2 -> data = 6;
     newnode2 -> next = NULL;
     struct node *temp2  = head;
-    for(int i = 1; i< (position -1)&& temp2 !=NULL; i++){
+    for(int i = 1; i< (position -1)&& temp2 !=NULL; i++)
+    {
         temp2 = temp2 -> next;
     }
-    if(temp2 != NULL){
+    if(temp2 != NULL)
+    {
         newnode2-> next = temp2-> next;
         temp2 -> next = newnode2;
+    }
+    // printing linked list
+    printf("\nOriginal list: ");
+    struct node *ptr = head;
+    while(ptr != NULL)
+    {
+        printf("\n%d", ptr-> data);
+        //printf("\n%d", ptr -> next);
+        ptr = ptr-> next;
     }
     // deletion the first node
     struct node *temp3 = head;
     head = head -> next;
     free(temp3);
-    // code for printing the linked list
-    struct node *ptr = head;
-    while(ptr != NULL){
-    printf("\n%d", ptr-> data);
-    //printf("\n%d", ptr -> next);
-    ptr = ptr-> next;
     
+    // code for printing the linked list
+    printf("\n First element Delteted from Linked list: ");
+    struct node *ptr2 = head;
+    while(ptr2 != NULL)
+    {
+        printf("\n%d", ptr2-> data);
+        //printf("\n%d", ptr -> next);
+        ptr2 = ptr2-> next;
     }
-}
+    // deleting the last element:
+    if(head == NULL)
+    {
+        printf("NO node in element");
+    }
+    else if (head -> next == NULL)
+    {
+        free(head);
+        head = NULL;
+        printf("ONLY one node is present");
+    }
+    else
+    {
+        struct node *prev = head;
+        struct node *current3 = head -> next;
+        
+    
+        while(current3 -> next != NULL)
+        {
+            prev = current3 ;
+            current3 = current3 -> next;
+        }
+        prev -> next = NULL;
+        
+        free(current3);
+    }        
+    printf("Last element Deleted succeccfully!");
+    printf("\n last element Delteted from Linked list: ");
+    struct node *ptr5 = head;
+    while(ptr5 != NULL)
+    {
+        printf("\n%d", ptr5-> data);
+        //printf("\n%d", ptr -> next);
+        ptr5 = ptr5-> next;
+    }
+    
+
+}    
