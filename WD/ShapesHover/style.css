@@ -1,0 +1,64 @@
+*{
+    margin : 0%;
+    padding : 0%;
+    box-sizing : border-box;
+}
+html,body{
+    height : 100%;
+    width : 100%;
+}
+/* main is the entire screen 
+every thing will be dine inside the main*/
+#main{
+    height : 100%;
+    width : 100%;
+    color : blue;
+    /* background-color: salmon; */
+    display: flex;
+    align-items : center;
+    justify-content: center;
+}
+/* #box{
+    display: flex;
+} */
+.shape{
+    /* margin : 10px; */
+    margin-top: 10px;
+    margin-left: 10px;
+    /* margin: 0px 30px 30px 0px; */
+    /* top left bottom right */
+    height: 200px;
+    width: 200px;
+    color : black;
+    background-color: transparent;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans';
+}
+#circle{
+    
+    border-radius: 50%;
+h1{
+    font-weight: lighter;
+}
+}
+#diamond{
+    rotate: 45deg ;
+}
+#diamond h1{
+    rotate : -45deg;
+}
+#square{
+    margin-bottom: 90px;
+}
+#square:hover{
+    background-color: red;
+}
+#circle:hover{
+    background-color: green ;
+}
+#diamond:hover{
+    background-color: blue;
+}

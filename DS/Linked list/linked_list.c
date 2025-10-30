@@ -4,14 +4,14 @@
 struct node
 {
     int data;
-    struct node*next;
+    struct node *next;
 };
 
 int main()
 {   //creating the linked list
     // first node
-    struct node*head;
-    head=(struct node*)malloc(sizeof(struct node));
+    struct node *head;
+    head=malloc(sizeof(struct node));
     head -> data = 1;
     head -> next = NULL;
     // second node
@@ -151,5 +151,4 @@ int main()
     }
     
 
-}    
-    
+}
