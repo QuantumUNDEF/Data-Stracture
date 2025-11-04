@@ -53,7 +53,7 @@ int main()
         temp = temp -> next;
     }
     // updating the last address from NULL to new node
-    temp->next = new_node;
+    temp->next = new_node; //key piont to remember
     printf("\nElement added at Last: ");
     struct node *ptr7 = head;
     // printing
@@ -152,3 +152,4 @@ int main()
     
 
 }
+//      Champ. MUSKAN 💗😀
