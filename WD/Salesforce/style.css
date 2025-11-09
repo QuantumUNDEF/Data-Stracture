@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#header{
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    
+}
+
+#fakeheader{
+    width: 100%;
+    height: 10vh;    
+}
+#logo{
+    height: 100%;    
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.text{
+    color: rgb(7, 7, 80);
+    font-family: 'Gill Sans' ;
+    font-weight: bold;
+}
+.text:hover{
+    color: rgb(95, 138, 189);
+}
+#contact{
+    text-align: center;
+    font-family: 'Gill Sans' ;
+    font-weight: lighter;
+}
+.icons{
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icons:hover{
+    background-color: skyblue;
+
+}
+#login{    
+    display: flex;
+    padding: 5px;
+    border-radius: 50px
+}
+#login:hover{
+    background-color: lightblue;
+    display: flex;
+    padding: 5px;
+    border-radius: 20px
+}
+#try{
+    background-color: green;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+#try:hover{
+    background-color: rgb(8, 65, 8);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+#page1{
+   height: 90vh;   /*viewport hieght doesnt depend on the parent div rather than the  */
+   width: 100%;    /*vw for the view port width*/
+   background: pink;   
+}
+#page2{
+    height: 90vh;   /*viewport hieght doesnt depend on the parent div rather than the  */
+    width: 100%;    /*vw for the view port width*/
+    background: greenyellow;
+}
