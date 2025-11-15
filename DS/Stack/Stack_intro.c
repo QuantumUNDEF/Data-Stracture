@@ -25,6 +25,11 @@ void pop() {
     }
 }
 
+void display(){    
+    for(int i = top; i>= 0; i--){
+        printf("%d\n", stack[i]);
+    }
+}
 int main()
  {
     // pushing elements
@@ -32,14 +37,7 @@ int main()
     push(20);
     push(30);
     push(40);
-    
-
-    // popping elements
-    for (int i = 0; i <MAX; i++)
-    {
-        pop();
-    }
-
+    display();
 
     return 0;
 }

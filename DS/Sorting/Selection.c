@@ -34,6 +34,7 @@ int main(){
     inputarr(arr, size);
     printarr(arr, size);
     sort(arr, size);
+    printf("Array is sorted");
     printarr(arr, size);
     return 0;
 }

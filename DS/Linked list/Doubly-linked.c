@@ -7,4 +7,7 @@ struct node{
 };
 int main(){
     
+
+
+    
 }
