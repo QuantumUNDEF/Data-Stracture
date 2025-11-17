@@ -6,26 +6,29 @@
               
 */
 #include <stdio.h>
-int binSearch( int arr[], int low, int high, int n){
-    low = 0;
-    high = high;
+int binSearch( int arr[], int size ,int n){
+    int low = 0;
+    int high = size-1;
     int mid;
-    while(low < high){
+    while(low <= high){
         mid = (low + high )/2;
         if( arr[mid] == n){
-            printf("Element found");
-            break;
+            printf("Element %d found\n", n);
+            return mid;
         }else if(n<arr[mid]){
             high = mid-1;
         }else{
             low = mid+1;
         }
     }
-    return mid;
+    printf("Element not found");
+    return -1 ;
 }
 int main(){
-    int arr[7] = {1, 2,3,4 ,5,6, 7};
-    int index = binSearch(arr, 0, 6, 7);
-    printf("%d", index);
+    int size = 7;
+    int arr[7] = {1, 2,3,4 ,5,6, 7};// Array must be sorted
+    int element = 3;
+    int index = binSearch(arr, size,element);
+    printf("Index: %d", index);
     return 0;
 }
