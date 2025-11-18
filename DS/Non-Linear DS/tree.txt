@@ -1,0 +1,89 @@
+// finite no. of nodes in which there is a distinguished node called root of the tree. Remaining nodes are partitioned into disjoint setwhere n>=0 where each set is itself a tre.
+// A tree is a non linear DS which can be empty with no nodes or it consists of 1 speical node called root node with 0 or 1 or more sub trees
+/*
+TREE:                 
+                      (A)
+                       |
+             -----------------------
+             |                     |
+            (B)                   (C)
+       -------------         -------------
+       |     |     |         |           |
+      (D)   (E)   (F)       (G)         (H)
+     -----        -----                  |
+     |   |        |   |                 (M)
+    (I) (J)      (K) (L)
+Node :- each element normally represented by a Circle.
+Edge: - the line connecting two node is called edge.
+Father Node/ Parent Node :- It is a immediate predecessor of a node (come b4).
+Grand Parents :- It is a parent of a parent.
+Child Node : - All the immediate successor of a node is called child node.
+Grand Child :- It is a child of a child node.
+Root Node:- it is special node which does not have any parents
+Siblings :- Two or more node 
+
+
+
+
+*/
+
+/*
+a datastructure is linear when all the element in a linear order.
+NON LINEAR
+-> a data structure is non linear when all the elements are not arranged in a linear 
+(sequential) order. There is no linear arrangement of the elements. 
+Q Why need to non-linear datastructure?
+The fundamental disadvantage of a linear ds is that the elements are arranged linearly 
+, which slow down the ability to search an element.
+
+#### Searching in a linear ds is sequentially very slow as compare to the non linear ds.
+consider a linked list one lakh elements
+
+
+Tree
+->tree is a finite number of nodes in which there is a distinguished node called root of tree.
+and the remaining nodes are partitioned into disjoined set.T1,T2,T3...Tn, where n is greater or
+equal to zero and each set is itself is a tree.
+Or
+tree is a non linear ds which can be empty with no nodes or it consist of one special node
+called root node with zero or one or more sub trees
+
+
+TREE:                 
+                      (A)
+                       |
+             -----------------------
+             |                     |
+            (B)                   (C)
+       -------------         -------------
+       |     |     |         |           |
+      (D)   (E)   (F)       (G)         (H)
+     -----        -----                  |
+     |   |        |   |                 (M)
+    (I) (J)      (K) (L)
+
+Root node
+
+Each element of a tree is called the node of the tree. it is normally represented by a circle in a tree
+
+Edge-> the line connecting to nodes is called edge.
+
+Parent nodes(father nodes)-> It is an immediate predecessor(which come before) of an node.
+Grand Parent -> it is a  parent of a parent.
+child node -> all the immediate succesor of a node is called child node.
+Grand child-> it is of a child of a child node.
+root node -> root node is special node which does not have any parents 
+remaining node atleast have one parent.
+Leaf node-> it is also known as terminal node, is a node which has no child .
+Sibling node-> two or more nodes which have same parents.
+
+LEVEL
+-> level of any node is define as the distance of that from the root of the tree.
+
+Height of the node-> longest path from node to leaf.
+
+depth of node -> it is the no. of edge from the root to that node.
+degree -> the no. of subtrees or children of a node is called degree . 
+path is a sequence of node and edge between two node. 
+Path length-> it is define as a total no. of edge in a path.
+*/

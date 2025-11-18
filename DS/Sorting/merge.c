@@ -1,4 +1,11 @@
 #include <stdio.h>
+int printarr(int arr[], int n){
+    printf("Printng array.....\n");
+    for(int i = 0; i<n;  i++){
+        printf("%4d", arr[i]);
+    }
+    printf("\n");
+}
 void merge(int arr[], int left, int mid, int right){
     int i, j, k, temp[100];
     i = left;
