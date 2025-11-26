@@ -27,5 +27,6 @@ int main(){
     root->right = createNode(6);
     root -> left->left = createNode(2);
     root -> left -> right = createNode(4);
+    // root -> left -> right->left = createNode(5);
     inOrder(root);
 }

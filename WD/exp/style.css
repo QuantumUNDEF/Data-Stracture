@@ -1,0 +1,35 @@
+#main {
+    
+    display: flex;
+    align-items: center; 
+    border: 1px solid black; 
+    background-color: #fce4d4; 
+}
+.header{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+#logo {
+    width: 55px; 
+    padding: 5px;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+#logo img {
+    
+    width: 100%; 
+    height: auto;
+}
+
+#name {
+    display: flex;
+    width: 85%; /* Allocate space for the name */
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}

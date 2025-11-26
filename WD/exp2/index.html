@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Website Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <table class="header_table">
+            <tr>
+                <td class="logo_cell">Logo</td>
+                <td class="title_cell">Website Name</td>
+            </tr>
+        </table>
+
+        <table class="nav_table">
+            <tr>
+                <td>Home</td>
+                <td class="current_page">Login</td>
+                <td>Registration</td>
+                <td>Catalogue</td>
+                <td>Cart</td>
+            </tr>
+        </table>
+
+        <table class="main_layout">
+            <tr>
+                <td class="sidebar_column">
+                    <div class="side_item">CSE</div>
+                    <div class="side_item">ECE</div>
+                    <div class="side_item">EEE</div>
+                    <div class="side_item">CIVIL</div>
+                </td>
+
+                <td class="content_column">
+                    <div class="login_area">
+                        <h3>Login Page</h3>
+                        <form>
+                            <div class="input_row">
+                                <label for="username">User Name:</label>
+                                <input type="text" id="username" name="username">
+                            </div>
+                            <div class="input_row">
+                                <label for="password">Passwords:</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <div class="button_container">
+                                <button type="submit" class="submit_button">Submit</button>
+                                <button type="reset" class="reset_button">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
